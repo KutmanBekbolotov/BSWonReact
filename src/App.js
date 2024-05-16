@@ -76,14 +76,14 @@ function App() {
         <section id='about'>
           <div className='header'>
             <h1>About academy</h1>
-            <a href="#">Hire academy</a>
+            <a href="#">Contact Us</a>
           </div>
 
           <div className='card'>
             <img src='bulgassLogo.jpeg' alt='Логотип BSW IT-academy'></img>
             <div className='info'>
               <h1>This is Bulgass</h1>
-              <p>We will explore the best ways of IT industry</p>
+              <p>We will explore the best ways of IT industry.</p>
             </div>
           </div>
         </section>
@@ -128,6 +128,24 @@ function App() {
               <p>Virtualization, arkestration, working with servers, as well as various architectural patterns and many more interesting things
                 you will explore in BS71.
               </p>
+            </div>
+          </div>
+          <div className='card'>
+            <div className='info'>
+              <h1>BS80 'Operaiting Systems'</h1>
+              <p>Deep learning of how computers and their systems works, in this course you will explore low and high level programming.</p>
+            </div>
+          </div>
+          <div className='card'>
+            <div className='info'>
+              <h1>BS90 'AI course'</h1>
+              <p>If you want to create AI, explore how they works this course for you.</p>
+            </div>
+          </div>
+          <div className='card'>
+            <div className='info'>
+              <h1>BS91 'Advanced AI'</h1>
+              <p>Deep learning, course who want to be briliant in AI way of programming</p>
             </div>
           </div>
         </div>

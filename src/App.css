@@ -222,6 +222,7 @@ header .info-text .scroll::before{
 .social-icons {
     display: flex;
     justify-content: center;
+    
   }
 
   .social-icon-container .social-icon {
