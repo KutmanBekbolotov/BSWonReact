@@ -3,6 +3,20 @@ import { Helmet } from 'react-helmet';
 import './App.css';
 
 function App() {
+  function redirectToInstagram(){
+    window.location.href = 'https://www.instagram.com/bulgass.it/';
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    const instagramLink = document.querySelectorAll('.social-icon');
+
+    instagramLink.forEach(function(link){
+      link.addEventListener('click', function(event){
+        event.preventDefault();
+        redirectToInstagram();
+      })
+    })
+  })
+
   useEffect(() => {
     const scriptParticles = document.createElement('script');
     scriptParticles.src = 'https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js';
@@ -57,10 +71,7 @@ function App() {
             <p>Contact number: 550-09-29-03</p>
             <div className="social-links">
               <a href="#" className="social-icon">
-                <i className="bx bxl-facebook-circle"></i>
-              </a>
-              <a href="#" className="social-icon">
-                <i className="bx bxl-twitter"></i>
+                <i className="bx bxl-telegram"></i>
               </a>
               <a href="#" className="social-icon">
                 <i className="bx bxl-instagram-alt"></i>
@@ -108,14 +119,14 @@ function App() {
             <div className="info">
               <h1>BS61 'Advanced Game Dev'</h1>
               <p>Once you've covered the basics of game development, we move on to more advanced concepts in this area.</p>
-            </div>
+              </div>
           </div>
           <div className="card">
             <div className="info">
               <h1>BS70 'Web Development'</h1>
               <p>Do you want to create awesome sites and explore how the web engine works? BS70 is for you.</p>
             </div>
-          </div>
+            </div>
           <div className="card">
             <div className="info">
               <h1>BS71 'Advanced Web Development'</h1>

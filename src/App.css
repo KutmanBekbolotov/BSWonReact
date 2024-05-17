@@ -219,25 +219,17 @@ header .info-text .scroll::before{
     box-shadow: none;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    
-  }
-
-  .social-icon-container .social-icon {
+.social-links{
+    margin-left: 65px;
+}
+.social-icon {
     gap: 100px;
   }
   
-  .social-icon-container .social-icon:hover {
-    color: #007bff; /* Цвет при наведении */
-  }
-  
-  
-  .social-icon {
+.social-icon {
     color: #fff; /* Цвет иконок */
     font-size: 30px; /* Размер иконок */
-  }
+}
   
 
 @media screen and (max-width: 700px) {
