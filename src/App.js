@@ -8,13 +8,12 @@ function App() {
   }
   document.addEventListener('DOMContentLoaded', function(){
     const instagramLink = document.querySelectorAll('.social-icon');
-
-    instagramLink.forEach(function(link){
+    if (instagramLink) {
       link.addEventListener('click', function(event){
         event.preventDefault();
         redirectToInstagram();
       })
-    })
+    }
   })
 
   useEffect(() => {
@@ -70,9 +69,9 @@ function App() {
           <div className="contact-info">
             <p>Contact number: 550-09-29-03</p>
             <div className="social-links">
-              <a href="#" className="social-icon">
+              <button className="social-icon">
                 <i className="bx bxl-telegram"></i>
-              </a>
+              </button>
               <a href="#" className="social-icon">
                 <i className="bx bxl-instagram-alt"></i>
               </a>
@@ -119,7 +118,7 @@ function App() {
             <div className="info">
               <h1>BS61 'Advanced Game Dev'</h1>
               <p>Once you've covered the basics of game development, we move on to more advanced concepts in this area.</p>
-            </div>
+              </div>
           </div>
           <div className="card">
             <div className="info">
