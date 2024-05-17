@@ -3,9 +3,11 @@ import { Helmet } from 'react-helmet';
 import './App.css';
 
 function App() {
+
   function redirectToInstagram(){
     window.location.href = 'https://www.instagram.com/bulgass.it/';
   }
+
 
   useEffect(() => {
     const instagramLink = document.querySelector('.social-icon');
@@ -43,7 +45,7 @@ function App() {
       behavior: 'smooth',
     });
   }
-
+  
   useEffect(() => {
     function handleScroll() {
       const scrollTopButton = document.querySelector('.scroll-top');
@@ -53,9 +55,9 @@ function App() {
         scrollTopButton.style.display = 'none';
       }
     }
-
+    
     window.addEventListener('scroll', handleScroll);
-
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -70,22 +72,25 @@ function App() {
         <div id="particles"></div>
         <div className="info-text">
           <h1>Bulgass IT-academy</h1>
-          <h3>Exploring computer science since</h3>
+          <h3>Exploring computer science</h3>
           <div className="contact-info">
             <p>Contact number: 550-09-29-03</p>
-            <div className="social-links">
-              <button className="social-icon">
-                <i className="bx bxl-telegram"></i>
-              </button>
-              <button className="social-icon" onClick={redirectToInstagram}>
-                <i className="bx bxl-instagram-alt"></i>
-              </button>
-            </div>
+
+
             <a href="#about" className="scroll"><i className="bx bxs-down-arrow"></i></a>
           </div>
         </div>
       </header>
-
+      <section>
+            <div className="social-links">
+            <button className="social-icon" onClick={() => window.location.href = 'https://www.instagram.com/bulgass.it/'}>
+               <i className="bx bxl-instagram-alt"></i>
+            </button>
+            <button className="social-icon" onClick={() => window.location.href = 'https://t.me/+ejlSjQzju0UyZTQy'}>
+               <i className="bx bxl-telegram"></i>
+            </button>
+            </div>
+      </section>
       <section id="about">
         <div className="header">
           <h1>About academy</h1>
@@ -110,7 +115,7 @@ function App() {
           <div className="card">
             <div className="info">
               <h1>BS50 'Basics'</h1>
-              <p>Are you a beginner in programming and you don't know which way to choose? BS50 is our course for beginners where you will explore basics of computer science and other cool programs.</p>
+              <p>Areyou a beginner in programming and you don't know which way to choose? BS50 is our course for beginners where you will explore basics of computer science and other cool programs.</p>
             </div>
           </div>
           <div className="card">

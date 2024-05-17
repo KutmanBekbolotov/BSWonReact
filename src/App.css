@@ -220,16 +220,20 @@ header .info-text .scroll::before{
 }
 
 .social-links{
-    margin-left: 65px;
+    background-color: #2b2f4b;
+    display: flex;
+    justify-content: center;
 }
+
 .social-icon {
     gap: 100px;
-  }
-  
-.social-icon {
     color: #fff; /* Цвет иконок */
+    background-color: #2b2f4b;
     font-size: 30px; /* Размер иконок */ 
+    margin-left: 10px;
+    border-radius: 10px;
 }
+
   
 
 @media screen and (max-width: 700px) {
