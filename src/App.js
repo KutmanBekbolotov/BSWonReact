@@ -3,6 +3,20 @@ import { Helmet } from 'react-helmet';
 import './App.css';
 
 function App() {
+  function redirectToInstagram(){
+    window.location.href = 'https://www.instagram.com/bulgass.it/';
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    const instagramLink = document.querySelectorAll('.social-icon');
+
+    instagramLink.forEach(function(link){
+      link.addEventListener('click', function(event){
+        event.preventDefault();
+        redirectToInstagram();
+      })
+    })
+  })
+
   useEffect(() => {
     const scriptParticles = document.createElement('script');
     scriptParticles.src = 'https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js';
