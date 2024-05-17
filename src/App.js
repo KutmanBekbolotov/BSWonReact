@@ -6,17 +6,16 @@ function App() {
   function redirectToInstagram(){
     window.location.href = 'https://www.instagram.com/bulgass.it/';
   }
-  document.addEventListener('DOMContentLoaded', function(){
-    const instagramLink = document.querySelectorAll('.social-icon');
-    if (instagramLink) {
-      link.addEventListener('click', function(event){
-        event.preventDefault();
-        redirectToInstagram();
-      })
-    }
-  })
 
   useEffect(() => {
+    const instagramLink = document.querySelector('.social-icon');
+    if (instagramLink) {
+      instagramLink.addEventListener('click', function(event){
+        event.preventDefault();
+        redirectToInstagram();
+      });
+    }
+
     const scriptParticles = document.createElement('script');
     scriptParticles.src = 'https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js';
     scriptParticles.async = true;
@@ -27,6 +26,12 @@ function App() {
     document.body.appendChild(scriptCustom);
 
     return () => {
+      if (instagramLink) {
+        instagramLink.removeEventListener('click', function(event){
+          event.preventDefault();
+          redirectToInstagram();
+        });
+      }
       document.body.removeChild(scriptParticles);
       document.body.removeChild(scriptCustom);
     };
@@ -72,9 +77,9 @@ function App() {
               <button className="social-icon">
                 <i className="bx bxl-telegram"></i>
               </button>
-              <a href="#" className="social-icon">
+              <button className="social-icon" onClick={redirectToInstagram}>
                 <i className="bx bxl-instagram-alt"></i>
-              </a>
+              </button>
             </div>
             <a href="#about" className="scroll"><i className="bx bxs-down-arrow"></i></a>
           </div>
@@ -84,7 +89,7 @@ function App() {
       <section id="about">
         <div className="header">
           <h1>About academy</h1>
-          <a href="#">Contact Us</a>
+          <button onClick={() => window.location.href = '#contact'}>Contact Us</button>
         </div>
 
         <div className="card">
@@ -99,7 +104,7 @@ function App() {
       <section id="features">
         <div className="header">
           <h1>Courses</h1>
-          <a href="#">See More</a>
+          <button onClick={() => window.location.href = '#more'}>See More</button>
         </div>
         <div className="feature-cards">
           <div className="card">
@@ -118,14 +123,14 @@ function App() {
             <div className="info">
               <h1>BS61 'Advanced Game Dev'</h1>
               <p>Once you've covered the basics of game development, we move on to more advanced concepts in this area.</p>
-              </div>
+            </div>
           </div>
           <div className="card">
             <div className="info">
               <h1>BS70 'Web Development'</h1>
               <p>Do you want to create awesome sites and explore how the web engine works? BS70 is for you.</p>
             </div>
-            </div>
+          </div>
           <div className="card">
             <div className="info">
               <h1>BS71 'Advanced Web Development'</h1>
