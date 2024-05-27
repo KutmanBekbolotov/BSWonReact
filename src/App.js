@@ -160,6 +160,18 @@ function App() {
               <p>Deep learning, a course for those who want to be brilliant in AI programming.</p>
             </div>
           </div>
+          <div className="card">
+            <div className="info">
+              <h1>BS100 'Cybersecurity (Systems administartion)'</h1>
+              <p>If you want to be cybersecurity specialist, you need to now what system administartion is, in this course you will explore unix operating systems, OSI models, Basics of Subnetting and basics of Kali linux.</p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="info">
+              <h1>BS101 'Advanced Cybersecurity(ensuring system security)'</h1>
+              <p>In this course you will explore deeply Kali linux, Firewall, lots of kind of cyberattacks and how defend systems of them.</p>
+            </div>
+          </div>
         </div>
       </section>
 
