@@ -234,6 +234,10 @@ header .info-text .scroll::before{
     border-radius: 10px;
     border: 0px;
 }
+.social-icon :hover{
+    cursor: pointer;
+    color: #151c4e;
+}
 
   
 
