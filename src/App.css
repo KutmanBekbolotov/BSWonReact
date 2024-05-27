@@ -232,6 +232,7 @@ header .info-text .scroll::before{
     font-size: 30px; /* Размер иконок */ 
     margin-left: 10px;
     border-radius: 10px;
+    border: 0px;
 }
 
   

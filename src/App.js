@@ -94,7 +94,7 @@ function App() {
       <section id="about">
         <div className="header">
           <h1>About academy</h1>
-          <button onClick={() => window.location.href = '#contact'}>Contact Us</button>
+          <a href= '#'>Contact Us</a>
         </div>
 
         <div className="card">
@@ -109,7 +109,7 @@ function App() {
       <section id="features">
         <div className="header">
           <h1>Courses</h1>
-          <button onClick={() => window.location.href = '#more'}>See More</button>
+          <a href= '#'>See More</a>
         </div>
         <div className="feature-cards">
           <div className="card">
