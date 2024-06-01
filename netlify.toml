@@ -2,6 +2,7 @@
   base = ""
   command = "npm run build"
   publish = "build"
+  node_version = "18.16.0"
 
 [context.production.environment]
   NODE_VERSION = "16"
