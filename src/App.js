@@ -3,6 +3,17 @@ import { Helmet } from 'react-helmet';
 import './App.css';
 
 function App() {
+  // function moreInfo(){
+  //   document.addEventListener("DOMContentLoaded", function(){
+  //     const newOverlay = document.getElementById("More");
+  //     const Overlay = [
+  //       {id: 1}
+  //     ];
+  //     if (Overlay){
+  //       window.location.href = "moreinfo.js";
+  //     }
+  //   })
+  // };
 
   function scrollToTop() {
     window.scrollTo({
@@ -26,7 +37,8 @@ function App() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  },[]);
+  
 
   return (
     <div className="App">
@@ -77,7 +89,7 @@ function App() {
       <section id="features">
         <div className="header">
           <h1>Courses</h1>
-          <a href= '#'>See More</a>
+          <button className='More' onClick={()=> window.location.href = "moreinfo.js"}>See More</button>
         </div>
         <div className="feature-cards">
           <div className="card">
