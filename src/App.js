@@ -74,7 +74,7 @@ function App() {
       <section id="about">
         <div className="header">
           <h1>About academy</h1>
-          <a href= '#'>Contact Us</a>
+          <button href="#about" className='glow-on-hover'>Contact Us</button>
         </div>
 
         <div className="card">
@@ -89,7 +89,7 @@ function App() {
       <section id="features">
         <div className="header">
           <h1>Courses</h1>
-          <button className='More' onClick={()=> window.location.href = "moreinfo.js"}>See More</button>
+          <button className='glow-on-hover' onClick={()=> window.location.href = "moreinfo.js"}>See More</button>
         </div>
         <div className="feature-cards">
           <div className="card">
