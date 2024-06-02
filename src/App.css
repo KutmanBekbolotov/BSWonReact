@@ -106,21 +106,6 @@ header .info-text .scroll::before{
     text-transform: uppercase;
 }
 
-#about .header a, #features .header a{
-    text-decoration: none;
-    font-size: 1.3em;
-    color: #fff;
-    border: 1px solid transparent;
-    padding: 10px 50px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    border-radius: 6px;
-    transition: all 0.3s ease;
-}
-
-#about .header a:hover, #features .header a:hover{
-    border-color: #fff;
-    box-shadow: none;
-}
 
 #about .card, #features .card{
     padding: 30px;
@@ -262,8 +247,9 @@ header .info-text .scroll::before{
     }
 
 }
+
 .glow-on-hover {
-    width: 220px;
+    width: 150px;
     height: 50px;
     border: none;
     outline: none;
