@@ -164,7 +164,7 @@ function App() {
       <section id="features">
         <div className="header">
           <h1>Courses</h1>
-          <button className='glow-on-hover' onClick={()=> window.location.href = "https://bulgass-courses.netlify.app/"}>See More</button>
+          <button className='glow-on-hover' onClick={()=> window.location.href = "https://bulgass-event-page.netlify.app/"}>See More</button>
         </div>
         <div className="feature-cards">
           <div className="card">
