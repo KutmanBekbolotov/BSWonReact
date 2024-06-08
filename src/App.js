@@ -63,8 +63,92 @@ function App() {
       <section id="about">
         <div className="header">
           <h1>About academy</h1>
-          <button href="#about" className='glow-on-hover'>Contact Us</button>
-        </div>
+          <label for="css-modal-checkbox" className='glow-on-hover' type='checkbox'>Show price's</label>
+                  <input type="checkbox" id="css-modal-checkbox" />
+                  <div class="cmc">
+                      <div class="cmt">
+                      <table class="table">
+                      	<thead>
+                      		<tr>
+                      			<th>Name courses</th>
+                      			<th>Group courses</th>
+                      			<th>Individ courses</th>
+                      			<th>Intensiv courses</th>
+                      		</tr>
+                      	</thead>
+                      	<tbody>
+                      		<tr>
+                      			<td>BS50</td>
+                      			<td>10 000 som</td>
+                      			<td>12 000 som</td>
+                      			<td>18 000 som</td>
+                      		</tr>
+                          <tr>
+                      			<td>BS60</td>
+                      			<td>12 000 som</td>
+                      			<td>14 000 som</td>
+                      			<td>21 000 som</td>
+                      		</tr>
+                          <tr>
+                      			<td>BS61</td>
+                      			<td>12 000 som</td>
+                      			<td>14 000 som</td>
+                      			<td>21 000 som</td>
+                      		</tr>
+                          <tr>
+                      			<td>BS70</td>
+                      			<td>12 000 som</td>
+                      			<td>14 000 som</td>
+                      			<td>21 000 som</td>
+                      		</tr>
+                          <tr>
+                      			<td>BS71</td>
+                      			<td>12 000 som</td>
+                      			<td>14 000 som</td>
+                      			<td>21 000 som</td>
+                      		</tr>
+                          <tr>
+                      			<td>BS80</td>
+                      			<td>14 000 som</td>
+                      			<td>14 000 som</td>
+                      			<td>21 000 som</td>
+                      		</tr>
+                          <tr>
+                      			<td>BS81</td>
+                      			<td>14 000 som</td>
+                      			<td>14 000 som</td>
+                      			<td>21 000 som</td>
+                      		</tr>
+                          <tr>
+                      			<td>BS90</td>
+                      			<td>13 000 som</td>
+                      			<td>15 000 som</td>
+                      			<td>22 500 som</td>
+                      		</tr>
+                          <tr>
+                      			<td>BS91</td>
+                      			<td>13 000 som</td>
+                      			<td>15 000 som</td>
+                      			<td>22 500 som</td>
+                      		</tr>
+                          <tr>
+                      			<td>BS100</td>
+                      			<td>12 000 som</td>
+                      			<td>14 000 som</td>
+                      			<td>21 000 som</td>
+                      		</tr>
+                          <tr>
+                      			<td>BS101</td>
+                      			<td>12 000 som</td>
+                      			<td>14 000 som</td>
+                      			<td>21 000 som</td>
+                      		</tr>
+                      	</tbody>
+                      </table>
+                      </div>
+                      <label for="css-modal-checkbox" class="css-modal-close"></label>
+              </div>
+              </div>
 
         <div className="card">
           <img src="bulgassLogo.jpeg" alt="Логотип BSW IT-academy" />
@@ -72,16 +156,6 @@ function App() {
             <h1>This is Bulgass</h1>
             <p>We will explore the best ways of IT industry.</p>
             <div>
-              <div className='Overlay'>
-                      <label for="css-modal-checkbox" class="css-modal-checkbox">Название кнопки</label>
-                  </div>
-                  <input type="checkbox" id="css-modal-checkbox" />    
-                  <div class="cmc">
-                      <div class="cmt">
-                          <p>Текст в модальном окне</p>
-                      </div>
-                      <label for="css-modal-checkbox" class="css-modal-close"></label>
-              </div>
           </div>
           </div>
         </div>

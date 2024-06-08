@@ -248,6 +248,10 @@ header .info-text .scroll::before{
     }
 
 }
+label{
+    text-align: center;
+    padding-top: 15px;
+}
 
 .glow-on-hover {
     width: 150px;
@@ -321,49 +325,7 @@ header .info-text .scroll::before{
 #css-modal-checkbox {
     display: none;
 }
-/* Кнопка для открытия */
-.css-modal-checkbox {
-    display: inline-flex;
-    margin: 5px;
-    text-decoration: none;
-    position: relative;
-    font-size: 10px;
-    line-height: 10px;
-    padding: 12px 20px;
-    color: #FFF;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Roboto', Тahoma, sans-serif;
-    background: #337AB7;
-    cursor: pointer;
-    border: 2px solid #BFE2FF;
-    overflow: hidden;
-    z-index: 1;    
-}
-.css-modal-checkbox:hover,
-.css-modal-checkbox:active,
-.css-modal-checkbox:focus {
-    color: #FFF;
-}
-.css-modal-checkbox:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -50px;
-    bottom: 0;
-    left: 0;
-    border-right: 50px solid transparent;
-    border-top: 50px solid #2D6B9F;
-    transition: transform 0.5s;
-    transform: translateX(-100%);
-    z-index: -1;
-}
-.css-modal-checkbox:hover:before,
-.css-modal-checkbox:active:before,
-.css-modal-checkbox:focus:before {
-    transform: translateX(0);
-}
- 
+
 /* Контейнер, который затемняет страницу */
 #css-modal-checkbox + .cmc {
     display: none;
@@ -379,7 +341,7 @@ header .info-text .scroll::before{
     width: 100%;
     height: 100%;
     animation: bg 0.5s ease;
-    background: rgba(51, 122, 183, 0.7);
+    background: rgba(11, 32, 49, 0.7);
 }
  
 /* Модальное окно */
@@ -388,13 +350,13 @@ header .info-text .scroll::before{
     font-size: 16px;
     padding: 20px;
     width:80%;
-    max-width: 600px;
+    max-width: 900px;
     max-height: 70%;
     transition: 0.5s;
-    border: 6px solid #BFE2FF;
+    border: 6px solid #131152;
     border-radius: 12px;
     background: #FFF;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2), 0 16px 20px rgba(255, 255, 255, 0.2);
     text-align: center;
     overflow: auto;
     animation: scale 0.5s ease;
@@ -403,7 +365,7 @@ header .info-text .scroll::before{
 .css-modal-close {
     width: 50px;
     height: 50px;
-    border: 6px solid #BFE2FF;
+    border: 6px solid #00437a;
     border-radius: 12px;
     position: absolute;
     z-index: 10;
@@ -411,7 +373,7 @@ header .info-text .scroll::before{
     right: 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23337AB7' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3e%3cline x1='18' y1='6' x2='6' y2='18'%3e%3c/line%3e%3cline x1='6' y1='6' x2='18' y2='18'%3e%3c/line%3e%3c/svg%3e");
-    background-color: #FFF;
+    background-color: #0b1530;
     background-size: cover;
     animation: move 0.5s ease;
     cursor: pointer;
@@ -439,6 +401,38 @@ header .info-text .scroll::before{
         background: rgba(51, 122, 183, 0);
     }
     100% {
-        background: rgba(51, 122, 183, 0.7);
+        background: rgba(11, 32, 49, 0.7);;
     }
+}
+.table {
+	width: 100%;
+	border: none;
+	margin-bottom: 20px;
+}
+.table thead th {
+	font-weight: bold;
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	background: #d8d8d8;
+	font-size: 14px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.table tbody td {
+	text-align: left;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	padding: 10px 15px;
+	font-size: 14px;
+	vertical-align: top;
+}
+.table thead tr th:first-child, .table tbody tr td:first-child {
+	border-left: none;
+}
+.table thead tr th:last-child, .table tbody tr td:last-child {
+	border-right: none;
+}
+.table tbody tr:nth-child(even){
+	background: #f3f3f3;
 }
