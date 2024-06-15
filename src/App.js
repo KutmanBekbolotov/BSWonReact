@@ -38,7 +38,7 @@ function App() {
         <div id="particles"></div>
         <div className="info-text">
           <h1>Bulgass IT-academy</h1>
-          <h3>Exploring computer science</h3>
+          <h3>Изучение компьютерных наук</h3>
           <div className="contact-info">  
           <p> Contact number: 220-041-943 &#9990; </p>
           <p>Contact whatsapp-number: 550-092-903<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" className="bi bi-whatsapp" viewBox="0 -5 10 20">
@@ -62,86 +62,86 @@ function App() {
       </section>
       <section id="about">
         <div className="header">
-          <h1>About academy</h1>
-          <label for="css-modal-checkbox" className='glow-on-hover' type='checkbox'>Show price's</label>
+          <h1>Об академии</h1>
+          <label for="css-modal-checkbox" className='glow-on-hover' type='checkbox'>Цены</label>
                   <input type="checkbox" id="css-modal-checkbox" />
                   <div class="cmc">
                       <div class="cmt">
                       <table class="table">
                       	<thead>
                       		<tr>
-                      			<th>Name courses</th>
-                      			<th>Group courses</th>
-                      			<th>Individ courses</th>
-                      			<th>Intensiv courses</th>
+                      			<th>Наименование курсов</th>
+                      			<th>Групповые курсы</th>
+                      			<th>Индивидуальные курсы</th>
+                      			<th>Интенсивные курсы</th>
                       		</tr>
                       	</thead>
                       	<tbody>
                       		<tr>
                       			<td>BS50</td>
-                      			<td>10 000 som</td>
-                      			<td>12 000 som</td>
-                      			<td>18 000 som</td>
+                      			<td>10 000 сом</td>
+                      			<td>12 000 сом</td>
+                      			<td>18 000 сом</td>
                       		</tr>
                           <tr>
                       			<td>BS60</td>
-                      			<td>12 000 som</td>
-                      			<td>14 000 som</td>
-                      			<td>21 000 som</td>
+                      			<td>12 000 сом</td>
+                      			<td>14 000 сом</td>
+                      			<td>21 000 сом</td>
                       		</tr>
                           <tr>
                       			<td>BS61</td>
-                      			<td>12 000 som</td>
-                      			<td>14 000 som</td>
-                      			<td>21 000 som</td>
+                      			<td>12 000 сом</td>
+                      			<td>14 000 сом</td>
+                      			<td>21 000 сом</td>
                       		</tr>
                           <tr>
                       			<td>BS70</td>
-                      			<td>12 000 som</td>
-                      			<td>14 000 som</td>
-                      			<td>21 000 som</td>
+                      			<td>12 000 сом</td>
+                      			<td>14 000 сом</td>
+                      			<td>21 000 сом</td>
                       		</tr>
                           <tr>
                       			<td>BS71</td>
-                      			<td>12 000 som</td>
-                      			<td>14 000 som</td>
-                      			<td>21 000 som</td>
+                      			<td>12 000 сом</td>
+                      			<td>14 000 сом</td>
+                      			<td>21 000 сом</td>
                       		</tr>
                           <tr>
                       			<td>BS80</td>
-                      			<td>14 000 som</td>
-                      			<td>14 000 som</td>
-                      			<td>21 000 som</td>
+                      			<td>14 000 сом</td>
+                      			<td>14 000 сом</td>
+                      			<td>21 000 сом</td>
                       		</tr>
                           <tr>
                       			<td>BS81</td>
-                      			<td>14 000 som</td>
-                      			<td>14 000 som</td>
-                      			<td>21 000 som</td>
+                      			<td>14 000 сом</td>
+                      			<td>14 000 сом</td>
+                      			<td>21 000 сом</td>
                       		</tr>
                           <tr>
                       			<td>BS90</td>
-                      			<td>13 000 som</td>
-                      			<td>15 000 som</td>
-                      			<td>22 500 som</td>
+                      			<td>13 000 сом</td>
+                      			<td>15 000 сом</td>
+                      			<td>22 500 сом</td>
                       		</tr>
                           <tr>
                       			<td>BS91</td>
-                      			<td>13 000 som</td>
-                      			<td>15 000 som</td>
-                      			<td>22 500 som</td>
+                      			<td>13 000 сом</td>
+                      			<td>15 000 сом</td>
+                      			<td>22 500 сом</td>
                       		</tr>
                           <tr>
                       			<td>BS100</td>
-                      			<td>12 000 som</td>
-                      			<td>14 000 som</td>
-                      			<td>21 000 som</td>
+                      			<td>12 000 сом</td>
+                      			<td>14 000 сом</td>
+                      			<td>21 000 сом</td>
                       		</tr>
                           <tr>
                       			<td>BS101</td>
-                      			<td>12 000 som</td>
-                      			<td>14 000 som</td>
-                      			<td>21 000 som</td>
+                      			<td>12 000 сом</td>
+                      			<td>14 000 сом</td>
+                      			<td>21 000 сом</td>
                       		</tr>
                       	</tbody>
                       </table>
@@ -153,8 +153,8 @@ function App() {
         <div className="card">
           <img src="bulgassLogo.jpeg" alt="Логотип BSW IT-academy" />
           <div className="info">
-            <h1>This is Bulgass</h1>
-            <p>We will explore the best ways of IT industry.</p>
+            <h1>Bulgass</h1>
+            <p>Мы обучаем лучшим направлениям в IT индустрии.</p>
             <div>
           </div>
           </div>
@@ -163,69 +163,69 @@ function App() {
 
       <section id="features">
         <div className="header">
-          <h1>Courses</h1>
-          <button className='glow-on-hover' onClick={()=> window.location.href = "https://bulgass-courses.netlify.app/"}>See More</button>
-          <button className='glow-on-hover' onClick={()=> window.location.href = "https://bulgass-event-page.netlify.app/"}>Event Page</button>
+          <h1>Курсы</h1>
+          <button className='glow-on-hover' onClick={()=> window.location.href = "https://bulgass-courses.netlify.app/"}>Узнать больше</button>
+          <button className='glow-on-hover' onClick={()=> window.location.href = "https://bulgass-event-page.netlify.app/"}>Новости</button>
         </div>
         <div className="feature-cards">
           <div className="card">
             <div className="info">
               <h1>BS50 'Basics'</h1>
-              <p>Are you a beginner in programming and you don't know which way to choose? BS50 is our course for beginners where you will explore basics of computer science and other cool programs.</p>
+              <p>Вы начинающий в программировании и не знаете, с чего начать? Курс BS50 предназначен для новичков, где вы изучите основы компьютерных наук и другие интересные программы.</p>
             </div>
           </div>
           <div className="card">
             <div className="info">
               <h1>BS60 'Introduction to Game Dev'</h1>
-              <p>Have you always wondered how games work? BS60 is a course where you will learn the basics of Game Development.</p>
+              <p>Вас всегда интересовало, как работают игры? Курс BS60 предлагает изучение основ разработки игр.</p>
             </div>
           </div>
           <div className="card">
             <div className="info">
               <h1>BS61 'Advanced Game Dev'</h1>
-              <p>Once you've covered the basics of game development, we move on to more advanced concepts in this area.</p>
+              <p>После изучения основ разработки игр мы переходим к более сложным концепциям в этой области.</p>
             </div>
           </div>
           <div className="card">
             <div className="info">
               <h1>BS70 'Web Development'</h1>
-              <p>Do you want to create awesome sites and explore how the web engine works? BS70 is for you.</p>
+              <p>Хотите создавать потрясающие сайты и изучать, как работает веб-движок? Курс BS70 создан специально для вас.</p>
             </div>
           </div>
           <div className="card">
             <div className="info">
               <h1>BS71 'Advanced Web Development'</h1>
-              <p>Virtualization, orchestration, working with servers, as well as various architectural patterns and many more interesting things you will explore in BS71.</p>
+              <p>Виртуализация, оркестровка, работа с серверами, а также различные архитектурные шаблоны и многое другое интересное вы изучите в курсе BS71.</p>
             </div>
           </div>
           <div className="card">
             <div className="info">
               <h1>BS80 'Operating Systems'</h1>
-              <p>Deep learning of how computers and their systems work. In this course you will explore low and high-level programming.</p>
+              <p>Глубокое изучение работы компьютеров и их систем. В этом курсе вы изучите низкоуровневое и высокоуровневое программирование.</p>
             </div>
           </div>
           <div className="card">
             <div className="info">
               <h1>BS90 'AI Course'</h1>
-              <p>If you want to create AI and explore how they work, this course is for you.</p>
+              <p>Если вы хотите создавать искусственный интеллект и изучать, как они работают, этот курс для вас.</p>
             </div>
           </div>
           <div className="card">
             <div className="info">
               <h1>BS91 'Advanced AI'</h1>
-              <p>Deep learning, a course for those who want to be brilliant in AI programming.</p>
+              <p>Глубокое обучение — курс для тех, кто хочет стать великолепным в программировании искусственного интеллекта.</p>
             </div>
           </div>
           <div className="card">
             <div className="info">
               <h1>BS100 'Cybersecurity (Systems administartion)'</h1>
-              <p>If you want to be cybersecurity specialist, you need to now what system administartion is, in this course you will explore unix operating systems, OSI models, Basics of Subnetting and basics of Kali linux.</p>
+              <p>Если вы хотите стать специалистом по кибербезопасности, вам нужно знать, что такое системное администрирование. В этом курсе вы изучите операционные системы Unix, модели OSI, основы подсетей и основы Kali Linux.</p>
             </div>
           </div>
           <div className="card">
             <div className="info">
               <h1>BS101 'Advanced Cybersecurity(ensuring system security)'</h1>
-              <p>In this course you will explore deeply Kali linux, Firewall, lots of kind of cyberattacks and how defend systems of them.</p>
+              <p>В этом курсе вы глубоко изучите Kali Linux, брандмауэры, различные типы кибератак и методы защиты систем от них.</p>
             </div>
           </div>
         </div>
