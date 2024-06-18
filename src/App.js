@@ -1,8 +1,32 @@
-import React, { useEffect } from 'react';
+import React, { useEffect} from 'react';
 import { Helmet } from 'react-helmet';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    // Явное объявление переменной dataLayer
+    window.dataLayer = window.dataLayer || [];
+
+    // Загрузка скрипта Google Tag Manager
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=G-1SG4PNDKV4`;
+    document.head.appendChild(script);
+
+    // Функция gtag()
+    window.dataLayer.push(function() {
+      window.gtag = function() {
+        window.dataLayer.push(arguments);
+      };
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-1SG4PNDKV4');
+    });
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+  
   function scrollToTop() {
     window.scrollTo({
       top: 0,
