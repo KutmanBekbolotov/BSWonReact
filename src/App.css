@@ -129,7 +129,6 @@ header .info-text .scroll::before{
 #about .card img{
     max-width: 200px;
     max-height: 200px;
-    border-radius: 50%;
 }
 
 #about .card .info{

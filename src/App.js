@@ -173,7 +173,7 @@ function App() {
               </div>
 
         <div className="card">
-          <img src="bulgassLogo.jpeg" alt="Логотип BSW IT-academy" />
+          <img src="bulgass.png" alt="Логотип BSW IT-academy" />
           <div className="info">
             <h1>Bulgass</h1>
             <p>Мы обучаем лучшим направлениям в IT индустрии.</p>
