@@ -401,39 +401,78 @@ label{
         background: rgba(11, 32, 49, 0.7);;
     }
 }
-.table {
-	width: 100%;
-	border: none;
-	margin-bottom: 20px;
+.container{
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, auto));
+    grid-template-rows: 60px repeat(10, 30px);
+    grid-gap: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-.table thead th {
-	font-weight: bold;
-	text-align: left;
-	border: none;
-	padding: 10px 15px;
-	background: #d8d8d8;
-	font-size: 14px;
-	border-left: 1px solid #ddd;
-	border-right: 1px solid #ddd;
+.block-name{
+    background-color: rgb(197, 193, 193);
+    padding: 10px;
+    font-weight: bold;
+    max-width: auto;
 }
-.table tbody td {
-	text-align: left;
-	border-left: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-	padding: 10px 15px;
-	font-size: 14px;
-	vertical-align: top;
+.bs{
+    background-color: rgb(197, 193, 193);
 }
-.table thead tr th:first-child, .table tbody tr td:first-child {
-	border-left: none;
+.cs{
+    background-color: rgb(226, 226, 226);
 }
-.table thead tr th:last-child, .table tbody tr td:last-child {
-	border-right: none;
+.price{
+    padding: 4px;
 }
-.table tbody tr:nth-child(even){
-	background: #f3f3f3;
+.price:nth-child(){
+    background-color: #002bff;
 }
 
+.container>* {
+    position: relative;
+  }
+  
+.price span {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .price:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -1000%;
+    left: -1000%;
+    z-index: 1;
+  }
+  
+  .price:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -1px;
+    width: 1px;
+    z-index: 2;
+    background-color: #fff;
+  }
+  
+  .price:nth-child(1n+1)::after {
+    bottom: -1px;
+    right: 0;
+    left: -1000%;
+    height: 1px;
+    z-index: 3;
+    width: auto;
+    top: auto;
+    background-color: #fff;
+  }
+  
+  .price:hover::before {
+    background-color: rgb(199, 216, 236);
+  }
 
 /* Убираем флажок */
 #Overlay {

@@ -89,84 +89,60 @@ function App() {
                   <input type="checkbox" id="css-modal-checkbox" />
                   <div className="cmc">
                       <div className="cmt">
-                      <table className="table">
-                      	<thead>
-                      		<tr>
-                      			<th>Наименование курсов</th>
-                      			<th>Групповые курсы</th>
-                      			<th>Индивидуальные курсы</th>
-                      			<th>Интенсивные курсы</th>
-                      		</tr>
-                      	</thead>
-                      	<tbody>
-                      		<tr>
-                      			<td>BS50</td>
-                      			<td>10 000 сом</td>
-                      			<td>12 000 сом</td>
-                      			<td>18 000 сом</td>
-                      		</tr>
-                          <tr>
-                      			<td>BS60</td>
-                      			<td>12 000 сом</td>
-                      			<td>14 000 сом</td>
-                      			<td>21 000 сом</td>
-                      		</tr>
-                          <tr>
-                      			<td>BS61</td>
-                      			<td>12 000 сом</td>
-                      			<td>14 000 сом</td>
-                      			<td>21 000 сом</td>
-                      		</tr>
-                          <tr>
-                      			<td>BS70</td>
-                      			<td>12 000 сом</td>
-                      			<td>14 000 сом</td>
-                      			<td>21 000 сом</td>
-                      		</tr>
-                          <tr>
-                      			<td>BS71</td>
-                      			<td>12 000 сом</td>
-                      			<td>14 000 сом</td>
-                      			<td>21 000 сом</td>
-                      		</tr>
-                          <tr>
-                      			<td>BS80</td>
-                      			<td>14 000 сом</td>
-                      			<td>14 000 сом</td>
-                      			<td>21 000 сом</td>
-                      		</tr>
-                          <tr>
-                      			<td>BS81</td>
-                      			<td>14 000 сом</td>
-                      			<td>14 000 сом</td>
-                      			<td>21 000 сом</td>
-                      		</tr>
-                          <tr>
-                      			<td>BS90</td>
-                      			<td>13 000 сом</td>
-                      			<td>15 000 сом</td>
-                      			<td>22 500 сом</td>
-                      		</tr>
-                          <tr>
-                      			<td>BS91</td>
-                      			<td>13 000 сом</td>
-                      			<td>15 000 сом</td>
-                      			<td>22 500 сом</td>
-                      		</tr>
-                          <tr>
-                      			<td>BS100</td>
-                      			<td>12 000 сом</td>
-                      			<td>14 000 сом</td>
-                      			<td>21 000 сом</td>
-                      		</tr>
-                          <tr>
-                      			<td>BS101</td>
-                      			<td>12 000 сом</td>
-                      			<td>14 000 сом</td>
-                      			<td>21 000 сом</td>
-                      		</tr>
-                      	</tbody>
-                      </table>
+                      <div class="container">
+        <div class="block-name">
+            <div class="name">Наименование курсов</div>
+        </div>
+        <div class="block-name">
+            <div class="name">Групповые курсы</div>
+        </div>
+        <div class="block-name">
+            <div class="name">Индивидуальные курсы</div>
+        </div>
+        <div class="block-name">
+            <div class="name">Интенсивные курсы</div>
+        </div>
+        <div class="price bs"><span>BS50</span></div>
+        <div class="price bs"><span>10 000 сом</span></div>
+        <div class="price bs"><span>12 000 сом</span></div>
+        <div class="price bs"><span>18 000 сом</span></div>
+        <div class="price cs"><span>BS60</span></div>
+        <div class="price cs"><span>12 000 сом</span></div>
+        <div class="price cs"><span>14 000 сом</span></div>
+        <div class="price cs">	<span>21 000 сом</span></div>
+        <div class="price bs"><span>BS61</span></div>
+        <div class="price bs"><span>12 000 сом</span></div>
+        <div class="price bs"><span>14 000 сом</span></div>
+        <div class="price bs">	<span>21 000 сом</span></div>
+        <div class="price cs"><span>BS70</span></div>
+        <div class="price cs"><span>12 000 сом</span></div>
+        <div class="price cs"><span>14 000 сом</span></div>
+        <div class="price cs"><span>21 000 сом</span></div>
+        <div class="price bs"><span>BS71</span></div>
+        <div class="price bs"><span>12 000 сом</span></div>
+        <div class="price bs"><span>14 000 сом</span></div>
+        <div class="price bs"><span>21 000 сом</span></div>
+        <div class="price cs"><span>BS80</span></div>
+        <div class="price cs"><span>14 000 сом</span></div>
+        <div class="price cs"><span>21 000 сом</span></div>
+        <div class="price cs"><span>21 000 сом</span></div>
+        <div class="price bs"><span>BS90</span></div>
+        <div class="price bs"><span>13 000 сом</span></div>
+        <div class="price bs"><span>15 000 сом</span></div>
+        <div class="price bs"><span>23 000 сом</span></div>
+        <div class="price cs"><span>BS91</span></div>
+        <div class="price cs"><span>13 000 сом</span></div>
+        <div class="price cs"><span>15 000 сом</span></div>
+        <div class="price cs"><span>23 000 сом</span></div>
+        <div class="price bs"><span>BS100</span></div>
+        <div class="price bs"><span>12 000 сом</span></div>
+        <div class="price bs"><span>14 000 сом</span></div>
+        <div class="price bs"><span>21 000 сом</span></div>
+        <div class="price cs"><span>BS101</span></div>
+        <div class="price cs"><span>12 000 сом</span></div>
+        <div class="price cs"><span>14 000 сом</span></div>
+        <div class="price cs"><span>21 000 сом</span></div>
+        </div>
                       </div>
                       <label for="css-modal-checkbox" className="css-modal-close"></label>
               </div>
