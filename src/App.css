@@ -425,9 +425,6 @@ label{
 .price{
     padding: 4px;
 }
-.price:nth-child(){
-    background-color: #002bff;
-}
 
 .container>* {
     position: relative;
@@ -436,8 +433,8 @@ label{
 .price span {
     position: relative;
     z-index: 2;
-  }
-  
+}
+
   .price:before {
     content: "";
     position: absolute;
@@ -449,7 +446,7 @@ label{
   }
   
   .price:after {
-    content: "";
+      content: "";
     position: absolute;
     top: 0;
     bottom: 0;
